@@ -56,3 +56,10 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now keycloak
 sudo systemctl status keycloak
 ```
+##### Access Keycloak Admin Console
+
+- URL: [https://139.59.91.6:8443/admin/master/console/](https://139.59.91.6:8443/admin/master/console/)
+- Username: `palak`
+- Password: `123456`
+
+> **Note:** Use the **Advanced** login if prompted.
