@@ -41,8 +41,8 @@ sudo systemctl restart httpd
 sudo composer require drupal/keycloak
 ```
   1. Enable Keycloak module in Drupal UI (Extend > Keycloak).
-	2.	In Keycloak Admin Console:
-	•	Clients → Create client → ID: drupal
-	•	Valid redirect URIs: http://your_drupal_domain.com/keycloak/oauth2/callback
-	•	Copy Client Secret.
-	3.	Configure Drupal: Configuration → Web services → Keycloak → Add Keycloak URL, Realm, Client ID, Secret.
+  2. In Keycloak Admin Console:
+    • Clients → Create client → ID: drupal
+	• Valid redirect URIs: http://your_drupal_domain.com/keycloak/oauth2/callback
+	• Copy Client Secret.
+ 3. Configure Drupal: Configuration → Web services → Keycloak → Add Keycloak URL, Realm, Client ID, Secret.
