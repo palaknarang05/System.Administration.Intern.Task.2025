@@ -3,10 +3,10 @@
 This document explains how to install and configure Keycloak on your DigitalOcean server.
 
 
-## A. Install Java
+## A. Install Java 21
 ```bash
-# Install OpenJDK 17
-sudo dnf install java-17-openjdk-devel -y
+# Install OpenJDK 21
+sudo dnf install java-21-openjdk-devel -y
 
 # Verify Java installation
 java -version
