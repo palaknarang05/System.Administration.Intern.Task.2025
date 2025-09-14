@@ -3,7 +3,10 @@ This project demonstrates how to set up a secure DigitalOcean droplet running Ro
 ## A.Live Environment
  
 - **Droplet IP:** http://139.59.91.6  
-- **Keycloak Admin Console:** https://139.59.91.6:8443/admin/master/console/  
+- **Keycloak Admin Console:** https://139.59.91.6:8443/admin/master/console/
+   - Username: `palak`
+   - Password: `123456`
+   - Note: Use the **Advanced** login if prompted.
 - **Drupal App:** http://your-drupal-domain.com  
 - **Django App:** http://your-django-domain.com  
 - **PHP App:** http://your-php-domain.com  
