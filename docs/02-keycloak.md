@@ -56,6 +56,18 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now keycloak
 sudo systemctl status keycloak
 ```
+
+### Screenshot: Keycloak Admin Console
+![Keycloak Admin Console](../screenshots/keycloak-console.png)  
+*This shows the Keycloak admin console after successful login.*
+
+### Screenshot: Keycloak Admin Login
+![Keycloak Admin Login](../screenshots/keycloak-login.png)
+
+### Screenshot: Keycloak Admin Console After Login
+![Keycloak Admin Console After Login](../screenshots/keycloak-after-login.png)  
+*This screenshot shows the Keycloak master realm dashboard after successful admin login, including Clients, Users, and Realm settings.*
+
 ##### Access Keycloak Admin Console
 
 - URL: [https://139.59.91.6:8443/admin/master/console/](https://139.59.91.6:8443/admin/master/console/)
@@ -63,3 +75,7 @@ sudo systemctl status keycloak
 - Password: `123456`
 
 > **Note:** Use the **Advanced** login if prompted.
+
+
+
+
