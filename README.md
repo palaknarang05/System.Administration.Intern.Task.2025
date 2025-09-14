@@ -1,6 +1,6 @@
 # DigitalOcean Server Setup with Keycloak SSO
 This project demonstrates how to set up a secure DigitalOcean droplet running Rocky Linux 10, install and configure Keycloak for Single Sign-On (SSO), and integrate it with three applications: Drupal 11, a Django project, and a PHP application.
-## A.Live Environment
+## A. Live Environment
  
 - **Droplet IP:** http://139.59.91.6  
 - **Keycloak Admin Console:** https://139.59.91.6:8443/admin/master/console/
