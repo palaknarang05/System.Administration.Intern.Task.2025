@@ -35,22 +35,32 @@ Create the file `/etc/systemd/system/keycloak.service`:
 ```ini
 [Unit]
 Description=Keycloak Authorization Server
-After=network.target
+After=network-online.target
+Wants=network-online.target
 
 [Service]
-Type=idle
+Type=simple
 User=keycloak
 Group=keycloak
-ExecStart=/opt/keycloak/bin/kc.sh start --optimized --http-port=8080
+Environment=KEYCLOAK_ADMIN=palak
+Environment=KEYCLOAK_ADMIN_PASSWORD=123456
+ExecStart=/opt/keycloak/bin/kc.sh start \
+  --https-certificate-file=/etc/x509/https/keycloak.crt \
+  --https-certificate-key-file=/etc/x509/https/keycloak.key \
+  --hostname=139.59.91.6 \
+  --hostname-strict=true \
+  --http-enabled=false \
+  --optimized
+Restart=on-failure
+RestartSec=30
 LimitNOFILE=102400
 LimitNPROC=102400
 TimeoutStartSec=600
-Restart=on-failure
-RestartSec=30
 
 [Install]
 WantedBy=multi-user.target
 ```
+
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable --now keycloak
