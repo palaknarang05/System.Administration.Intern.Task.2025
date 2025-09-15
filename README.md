@@ -7,8 +7,8 @@ This project demonstrates how to set up a secure DigitalOcean droplet running Ro
    - Username: `palak`
    - Password: `123456`
    - Note: Use the **Advanced** login if prompted.
-- **Drupal App:** http://your-drupal-domain.com  
-- **Django App:** http://139.59.91.6/admin/ 
+- **Drupal App:** http://139.59.91.6/drupal/
+- **Django App:** http://139.59.91.6/django/admin/ 
 - **PHP App:** http://your-php-domain.com  
    
 ## B. Documentation  
